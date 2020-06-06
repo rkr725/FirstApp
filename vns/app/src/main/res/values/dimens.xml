@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_size">20sp</dimen>
+    <dimen name="sub_heading_size">16sp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="small_pad">16dp</dimen>
+    <dimen name="pad_left">8dp</dimen>
+    <dimen name="pad_right">8dp</dimen>
+    <dimen name="end_margin">100dp</dimen>
+    <dimen name="pad_bottom">100dp</dimen>
+    <dimen name="weight">20dp</dimen>
+</resources>

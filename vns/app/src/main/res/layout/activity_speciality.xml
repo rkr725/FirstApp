@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Heading"
+        android:text="@string/varanasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Speciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/speciality"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        android:paddingBottom="0dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ganga_arti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/ganga_arti"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/aarti_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/spl_aarti" />
+
+            <TextView
+                android:id="@+id/aarti_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/ganga_text"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/explore_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/exploreGhat"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/explore_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/spl_explore_temple" />
+
+            <TextView
+                android:id="@+id/explore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/exploreText"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/boatRide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/boatRide"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/rideImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/spl_boat_ride" />
+
+            <TextView
+                android:id="@+id/ride_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/boatText"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/strollHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/strollGhats"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/stroll_ghat_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/apl_stroll_along_ghats" />
+
+            <TextView
+                android:id="@+id/stroll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/strollText"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/sarnathHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/sarnath"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/sarnathImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/spl_sightseeing_sarnath" />
+
+            <TextView
+                android:id="@+id/sarnath_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/sarnathText"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/localHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingTop="@dimen/small_pad"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/localMarket"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/localImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/introduction"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/spl_local_market" />
+
+            <TextView
+                android:id="@+id/local_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/introduction"
+                android:fontFamily="casual"
+                android:paddingStart="@dimen/pad_left"
+                android:paddingEnd="@dimen/pad_right"
+                android:text="@string/localText"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
